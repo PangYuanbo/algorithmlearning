@@ -44,5 +44,20 @@ int main(){
         else if(c=='D'){
             a.pop();
         }
+        else if(c=='L'){
+            if (!a.empty()){
+                b.push(a.top());
+                a.pop();
+            }
+        }
+        else if(c=='R'){
+            if (!b.empty()){
+                a.push(b.top());
+                b.pop();
+            }
+        }
+        else{
+
+        }
     }
 }
