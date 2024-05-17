@@ -57,7 +57,20 @@ int main(){
             }
         }
         else{
-
+            int k;
+            cin>>k;
+            int sum=0;
+            stack<int> temp;
+            for (int j=0;j<k;j++){
+                sum+=a.top();
+                temp.push(a.top());
+                a.pop();
+            }
+            cout<<sum<<endl;
+            while (!temp.empty()){
+                a.push(temp.top());
+                temp.pop();
+            }
         }
     }
 }
